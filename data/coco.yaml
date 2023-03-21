@@ -1,0 +1,12 @@
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+download: bash ./scripts/get_coco.sh
+
+train: .data/train  # 118287 images
+val: .data/val 
+test: .data/test # 5000 images
+
+# number of classes
+nc: 5
+
+# class names
+names: [ 'Bleak', 'Eel', 'Mullet', 'Other', 'Sunfish' ]
